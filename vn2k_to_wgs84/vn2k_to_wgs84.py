@@ -51,7 +51,7 @@ def vn2k_to_wgs83(coordinate,crs):
 #     crs = convert_to_crs('city_id')
 #     if crs != -1:
 #         new_coordinate = pyproj.Transformer.from_crs(
-#             crs_from=crs, crs_to=4326, always_xy=True).transform(coordinate[0], coordinate[1])
+#             crs_from=crs, crs_to=4326, always_xy=True).transform(coordinate[1], coordinate[0])
 
 #     else:
 #        return (dict(value=-1, message='Cannot find any crs matching city_id'))
